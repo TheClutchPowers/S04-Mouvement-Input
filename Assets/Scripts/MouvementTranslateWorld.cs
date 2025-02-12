@@ -8,7 +8,7 @@ public class MouvementTranslateWorld : MonoBehaviour
     void Update()
     {
         Vector3 deplacementCetFrame = _deplacement * Time.deltaTime;
-        transform.Translate(_deplacement.x, _deplacement.y, _deplacement.z, Space.Self);
+        transform.Translate(deplacementCetFrame, Space.Self);
 
         //Vector3 deplacement = new Vector3(1f, 0, 0);
         //transform.Translate(deplacement * Time.deltaTime, Space.World);
